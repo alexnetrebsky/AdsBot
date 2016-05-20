@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
   def index
-    render json: {:message => 'wow'}
+    render json: {:text => "you said #{params[:text]}"}
   end
 end
